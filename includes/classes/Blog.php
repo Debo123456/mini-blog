@@ -106,8 +106,14 @@
     */
     public function data() {
       if(count($this->_data) == 1) {
+        $this->_data[0]['postDesc'] = htmlspecialchars_decode($this->_data[0]['postDesc']);
+        $this->_data[0]['postCont'] = htmlspecialchars_decode($this->_data[0]['postCont']);
         return $this->_data[0];
       } else {
+        foreach ($this->_data as $post) {
+          $post['postDesc'] = htmlspecialchars_decode($post['postDesc']);
+          $post['postCont'] = htmlspecialchars_decode($post['postCont']);
+        }
         return $this->_data;
       }
     }

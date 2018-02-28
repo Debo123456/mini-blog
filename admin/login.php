@@ -34,9 +34,8 @@ if( $user->isLoggedIn() ){ header('Location: index.php'); }
             )
     			));
 
-    			if($validation->passed()) { //If login credentials exists.
-    				//log user in
-
+					if($validation->passed()) { //If login credentials exists.
+						//log user in
     				$login = $user->login(Input::get('username'), Input::get('password')); //Log user in. See User->login() function.
     				if($login)
     				{
@@ -60,7 +59,7 @@ if( $user->isLoggedIn() ){ header('Location: index.php'); }
     </div>
 	  <p><label>Username</label><input type="text" name="username" value=""  /></p>
 	  <p><label>Password</label><input type="password" name="password" value=""  /></p>
-	  <p><label></label><input type="submit" name="submit" value="Login"  /></p>
+	  <p><input type="submit" name="submit" value="Login"  /></p>
 	</form>
 
 </div>

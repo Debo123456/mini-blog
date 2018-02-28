@@ -66,7 +66,7 @@ if(!$user->isLoggedIn()){ header('Location: login.php'); }
       try {
 
         //insert into database
-        $blog->update(Input::get('id'), array(    //stores new user data in database. See User->create() function.
+        $blog->update(Input::get('id'), array(    //stores new blog data in database. See User->create() function.
             'author' => $user->data()['username'],
             'postTitle' => Input::get('postTitle'),
             'postDesc' => Input::get('postDesc'),

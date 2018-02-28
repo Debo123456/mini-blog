@@ -41,7 +41,7 @@ class DB {
           $x++;
         }
       }
-
+      
       if($this->_query->execute()) {
         $this->_results = $this->_query->fetchAll();
         $this->_count = $this->_query->rowCount();

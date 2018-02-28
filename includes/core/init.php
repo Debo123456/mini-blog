@@ -22,6 +22,6 @@
 	//Automatically loads Classs as they are called and instantiated
 	spl_autoload_register(function($class) {
     $path = $_SERVER['DOCUMENT_ROOT'];
-		require_once($path . 'mini blog' .'/includes/classes/' . $class . '.php');
+		require_once($path . '/mini-blog' .'/includes/classes/' . $class . '.php');
 	});
 ?>
