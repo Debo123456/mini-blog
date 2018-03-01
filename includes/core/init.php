@@ -14,7 +14,7 @@
 			'db' => 'blog'  //database name
 		),
     'session' => array(
-      'session_name' => 'user', //name os session variable that will be used to create user session
+      'session_name' => 'user', //name of session variable that will be used to create user session
       'token_name' => 'token'  //name of session variable to prevent illegal get and post requests
     )
   );
